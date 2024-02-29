@@ -1,27 +1,33 @@
-# React + TypeScript + Vite
+# RocketSwagger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RocketSwagger is a hosted Swagger UI instance that allows users to visualize and interact with OpenAPI documentation. By simply passing the URL of an OpenAPI JSON schema, users can explore APIs effortlessly.
 
-Currently, two official plugins are available:
+## How to Use
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To utilize RocketSwagger, follow these simple steps:
 
-## Expanding the ESLint configuration
+1. Navigate to [RocketSwagger](https://swagger.rocketapi.net/).
+2. Append `?url=<open_api_schema_url>` to the URL, replacing `<open_api_schema_url>` with the URL of your OpenAPI JSON schema. For example:
+   ```
+   https://swagger.rocketapi.net/?url=https://example.com/openapi.json
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. Hit Enter or navigate to the modified URL.
 
-- Configure the top-level `parserOptions` property like this:
+You will now be directed to a Swagger UI instance displaying the documentation specified by the provided OpenAPI schema URL.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Easy Visualization**: RocketSwagger provides an intuitive interface for exploring OpenAPI documentation.
+- **Interactive Documentation**: Users can interact with API endpoints directly within the Swagger UI.
+- **Hosted Solution**: Eliminates the need for setting up Swagger locally, making API exploration hassle-free.
+
+## Contributing
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## Support
+For any inquiries or support requests, please contact us at hello@rocketapi.net.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
