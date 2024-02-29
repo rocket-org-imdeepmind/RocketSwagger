@@ -13,5 +13,5 @@ phases:
 
   post_build:
     commands:
-      - echo "Copying build artifacts to S3..."
+      - echo "Copying build files to S3..."
       - aws s3 cp --recursive --acl public-read ./dist s3://rocket-swagger-web/
