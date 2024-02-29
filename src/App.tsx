@@ -7,7 +7,7 @@ const styles = {
     margin: 'auto',
     padding: '20px',
     backgroundColor: '#f8f9fa',
-    textAlign: 'center'
+    textAlign: 'center' as const
   },
   title: {
     color: '#fb2645',

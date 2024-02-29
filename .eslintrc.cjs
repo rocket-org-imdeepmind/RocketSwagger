@@ -5,8 +5,14 @@ module.exports = {
     },
     "extends": [
         "plugin:react/recommended",
-        "standard-with-typescript"
+        "standard-with-typescript",
+        "plugin:react/jsx-runtime"
     ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "overrides": [
     ],
     "parserOptions": {
@@ -17,7 +23,6 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "react/react-in-jsx-scope": "off",
         "no-console": "error"
     }
 }
