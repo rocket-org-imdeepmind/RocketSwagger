@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://swagger.rocketapi.net
+
+# Sitemaps
+Sitemap: https://swagger.rocketapi.net/sitemap.xml
